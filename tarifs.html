@@ -12,124 +12,197 @@
 
     <link rel="stylesheet" href="style.css">
 
-    <style>
-        .tarifs-hero {
-            text-align: center;
-            padding: 65px 20px;
-            background: linear-gradient(135deg, #f8edef, #f1dce1);
-        }
+   
+<style>
+/* ===================================
+   PAGE TARIFS - GLOW NAILS AND BEAUTY
+=================================== */
 
-        .tarifs-hero h2 {
-            color: #a85f72;
-            font-size: 36px;
-            margin-bottom: 12px;
-        }
+.tarifs-hero {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    padding: 85px 20px;
+    background:
+        radial-gradient(circle at 15% 20%, rgba(240,0,133,.22), transparent 35%),
+        radial-gradient(circle at 85% 80%, rgba(118,38,201,.25), transparent 35%),
+        var(--noir);
+    border-bottom: 3px solid var(--or);
+}
 
-        .tarifs-hero p {
-            color: #555;
-            font-size: 17px;
-        }
+.tarifs-hero h2 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: clamp(38px, 5vw, 55px);
+    margin-bottom: 18px;
+}
 
-        .tarifs-container {
-            max-width: 1100px;
-            margin: 45px auto;
-            padding: 0 20px;
-        }
+.tarifs-hero p {
+    color: #f4dce9;
+    font-size: 16px;
+    line-height: 1.8;
+}
 
-        .categorie-tarif {
-            margin-bottom: 45px;
-        }
+.tarifs-container {
+    max-width: 1050px;
+    margin: 55px auto;
+    padding: 0 22px;
+}
 
-        .categorie-tarif h2 {
-            color: #a85f72;
-            border-bottom: 2px solid #c9a052;
-            padding-bottom: 12px;
-            margin-bottom: 20px;
-        }
+.categorie-tarif {
+    margin-bottom: 55px;
+    padding: 30px;
+    background: white;
+    border: 1px solid rgba(214,172,85,.55);
+    border-radius: 20px;
+    box-shadow: 0 12px 35px rgba(23,19,21,.07);
+}
 
-        .tarif-item {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            gap: 20px;
-            padding: 18px;
-            margin-bottom: 12px;
-            background: #fff;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0, 0, 0, 0.06);
-        }
+.categorie-tarif h2 {
+    color: var(--violet);
+    font-family: Georgia, serif;
+    font-size: 29px;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    border-bottom: 2px solid var(--or);
+}
 
-        .tarif-item h3 {
-            color: #222;
-            font-size: 17px;
-            margin-bottom: 5px;
-        }
+.tarif-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 15px;
+    margin-bottom: 12px;
+    border-radius: 12px;
+    border-bottom: 1px solid #f0e5ec;
+    transition: .3s ease;
+}
 
-        .tarif-item p {
-            color: #777;
-            font-size: 14px;
-        }
+.tarif-item:hover {
+    background: #fff4fa;
+    transform: translateX(5px);
+}
 
-        .prix {
-            color: #a85f72;
-            font-size: 20px;
-            font-weight: bold;
-            white-space: nowrap;
-        }
+.tarif-item h3 {
+    color: var(--noir);
+    font-size: 17px;
+    margin-bottom: 7px;
+}
 
-        .tarif-note {
-            text-align: center;
-            background: #f8edef;
-            padding: 25px;
-            border-radius: 12px;
-            margin: 40px 0;
-        }
+.tarif-item p {
+    color: #766c74;
+    font-size: 14px;
+    line-height: 1.6;
+}
 
-        .tarif-note p {
-            color: #555;
-            line-height: 1.7;
-        }
+.prix {
+    color: var(--rose);
+    font-size: 21px;
+    font-weight: bold;
+    white-space: nowrap;
+}
 
-        .reservation-tarifs {
-            text-align: center;
-            margin: 50px 0;
-        }
+.tarif-note {
+    text-align: center;
+    padding: 30px;
+    border: 1px solid var(--or);
+    border-radius: 18px;
+    background: linear-gradient(135deg, #fff4fa, #f4edfb);
+    margin: 50px 0;
+}
 
-        .reservation-tarifs a {
-            display: inline-block;
-            padding: 15px 30px;
-            background: #a85f72;
-            color: white;
-            text-decoration: none;
-            border-radius: 30px;
-            font-weight: bold;
-            transition: 0.3s;
-        }
+.tarif-note p {
+    color: #625761;
+    line-height: 1.9;
+}
 
-        .reservation-tarifs a:hover {
-            background: #222;
-            transform: translateY(-3px);
-        }
+.reservation-tarifs {
+    text-align: center;
+    padding: 55px 20px;
+    margin: 50px 0;
+    border-radius: 20px;
+    background: linear-gradient(120deg, var(--noir), #3c1b40);
+}
 
-        @media (max-width: 600px) {
-            .tarifs-hero h2 {
-                font-size: 27px;
-            }
+.reservation-tarifs h2 {
+    color: white;
+    font-family: Georgia, serif;
+    font-size: clamp(25px, 4vw, 35px);
+    margin-bottom: 15px;
+}
 
-            .tarif-item {
-                padding: 14px;
-                gap: 10px;
-            }
+.reservation-tarifs p {
+    color: #f2dce9;
+    margin-bottom: 25px;
+}
 
-            .tarif-item h3 {
-                font-size: 15px;
-            }
+.reservation-tarifs a {
+    display: inline-block;
+    padding: 16px 30px;
+    color: white;
+    background: linear-gradient(120deg, var(--rose), var(--violet));
+    text-decoration: none;
+    border: 1px solid var(--or);
+    border-radius: 35px;
+    font-weight: bold;
+    transition: .3s;
+}
 
-            .prix {
-                font-size: 17px;
-            }
-        }
-    </style>
+.reservation-tarifs a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(240,0,133,.3);
+}
+
+#retour-haut {
+    display: block;
+    margin: 30px auto;
+    padding: 13px 26px;
+    background: var(--noir);
+    color: white;
+    border: 1px solid var(--or);
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 600px) {
+    .tarifs-hero {
+        padding: 60px 15px;
+    }
+
+    .tarifs-container {
+        padding: 0 12px;
+    }
+
+    .categorie-tarif {
+        padding: 20px 13px;
+    }
+
+    .categorie-tarif h2 {
+        font-size: 24px;
+    }
+
+    .tarif-item {
+        padding: 15px 5px;
+        gap: 10px;
+    }
+
+    .tarif-item h3 {
+        font-size: 15px;
+    }
+
+    .tarif-item p {
+        font-size: 12px;
+    }
+
+    .prix {
+        font-size: 17px;
+    }
+}
+</style>
+
 </head>
 
 
