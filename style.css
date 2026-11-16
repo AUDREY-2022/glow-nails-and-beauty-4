@@ -1,0 +1,177 @@
+
+/* Style général de la page */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F8EDEF;
+    color: #111111;
+    text-align: center;
+}
+
+/* En-tête du site */
+header {
+    background-color: #111111;
+    color: #D9A0A7;
+    padding: 35px 15px;
+}
+
+/* Grand titre */
+header h1 {
+    margin-bottom: 5px;
+    letter-spacing: 3px;
+}
+
+/* Texte BY AUDREY */
+header p {
+    color: #C9A052;
+    letter-spacing: 4px;
+}
+
+/* Partie principale */
+main {
+    padding: 70px 20px;
+}
+
+/* Bouton rendez-vous */
+button {
+    background-color: #D9A0A7;
+    color: #111111;
+    border: 1px solid #C9A052;
+    padding: 14px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Barre de navigation */
+nav {
+    background-color: #D9A0A7;
+    padding: 18px;
+}
+
+/* Liens du menu */
+nav a {
+    color: #111111;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Effet au passage de la souris */
+nav a:hover {
+    color: #FFFFFF;
+}
+
+/* Présentation des sections */
+section {
+    background-color: #FFFFFF;
+    margin: 30px auto;
+    padding: 45px 20px;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Titres des sections */
+section h2 {
+    color: #B87583;
+    letter-spacing: 1px;
+}
+
+/* Paragraphes */
+section p {
+    line-height: 1.8;
+}
+
+/* Organisation des prestations */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cartes des services */
+.service {
+    background-color: #F8EDEF;
+    width: 220px;
+    padding: 20px;
+    border-radius: 12px;
+    border: 1px solid #D9A0A7;
+}
+
+/* Titres des services */
+.service h3 {
+    color: #B87583;
+}
+
+/* Galerie de photos */
+.galerie {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Cadres des photos */
+.photo {
+    width: 230px;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 2px solid #D9A0A7;
+}
+
+/* Images */
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s;
+}
+
+/* Effet au passage de la souris */
+.photo img:hover {
+    transform: scale(1.1);
+}
+
+/* Formulaire de réservation */
+.reservation {
+    max-width: 500px;
+    margin: 30px auto;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 12px;
+}
+
+.reservation label {
+    font-weight: bold;
+    color: #111111;
+}
+
+.reservation input,
+.reservation select,
+.reservation textarea {
+    padding: 13px;
+    border: 1px solid #D9A0A7;
+    border-radius: 8px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+.reservation textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+.reservation button {
+    margin-top: 15px;
+    background-color: #111111;
+    color: #FFFFFF;
+    border: 1px solid #C9A052;
+}
+
+.reservation button:hover {
+    background-color: #B87583;
+}
