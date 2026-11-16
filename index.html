@@ -70,77 +70,179 @@
         </section>
 
         <!-- GALERIE -->
-        <section id="galerie">
-            <h2>Notre galerie</h2>
-            <p>Découvrez nos inspirations et créations beauté.</p>
+       
+<section id="galerie" class="galerie-section">
 
-            <div class="galerie">
+    <div class="galerie-intro">
+        <p class="galerie-surtitre">GLOW NAILS AND BEAUTY</p>
+        <h2>Notre univers beauté</h2>
+        <p>Découvrez nos inspirations et nos créations beauté.</p>
+    </div>
 
-                <div class="photo">
-                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500" alt="Ongles élégants">
-                </div>
+    <div class="galerie-luxe">
 
-                <div class="photo">
-                    <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=500" alt="Manucure artistique">
-                </div>
+        <div class="galerie-image galerie-grande">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=900" alt="Manucure élégante">
+        </div>
 
-                <div class="photo">
-                    <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=500" alt="Beauté des ongles">
-                </div>
+        <div class="galerie-image">
+            <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=700" alt="Nail art artistique">
+        </div>
 
-            </div>
-        </section>
+        <div class="galerie-image">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=700" alt="Beauté des ongles">
+        </div>
+
+        <div class="galerie-image">
+            <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=800&h=900&fit=crop&crop=entropy" alt="Inspiration manucure">
+        </div>
+
+        <div class="galerie-image">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=800&h=900&fit=crop&crop=entropy" alt="Pose d'ongles soignée">
+        </div>
+
+    </div>
+</section>
+
+<div id="agrandissement" class="lightbox">
+    <span id="fermerGalerie">&times;</span>
+    <img id="imageAgrandie" src="" alt="Photo agrandie">
+</div>
+
 
         <!-- CONTACT ET RESERVATION -->
-        <section id="contact">
-            <h2>Prendre rendez-vous</h2>
-            <p>Réservez votre moment beauté chez Glow Nails and Beauty.</p>
+      
+<section id="contact" class="contact-section">
 
-            <form class="reservation">
+    <div class="contact-intro">
+        <p class="galerie-surtitre">VOTRE INSTANT BEAUTÉ</p>
+        <h2>Réservez votre rendez-vous</h2>
+        <p>
+            Offrez-vous un moment de beauté et de détente.
+            Remplissez le formulaire et envoyez-nous votre demande.
+        </p>
+    </div>
 
-                <label for="nom">Votre nom</label>
-                <input type="text" id="nom" placeholder="Votre nom complet" required>
+    <form class="reservation">
 
-                <label for="telephone">Votre téléphone</label>
-                <input type="tel" id="telephone" placeholder="Votre numéro" required>
+        <div class="champ">
+            <label for="nom">Nom complet</label>
+            <input type="text" id="nom"
+                placeholder="Ex. Marie Dupont" required>
+        </div>
 
-                <label for="prestation">Prestation souhaitée</label>
-                <select id="prestation" required>
-                    <option value="">Choisissez une prestation</option>
-                    <option>Manucure</option>
-                    <option>Pose d'ongles</option>
-                    <option>Pédicure</option>
-                    <option>Nail Art</option>
-                </select>
+        <div class="champ">
+            <label for="telephone">Numéro de téléphone</label>
+            <input type="tel" id="telephone"
+                placeholder="Votre numéro" required>
+        </div>
 
-                <label for="date">Date souhaitée</label>
-                <input type="date" id="date" required>
+        <div class="champ">
+            <label for="prestation">Prestation souhaitée</label>
+            <select id="prestation" required>
+                <option value="">Choisissez une prestation</option>
+                <option value="Manucure">Manucure</option>
+                <option value="Pose d'ongles">Pose d'ongles</option>
+                <option value="Pédicure">Pédicure</option>
+                <option value="Nail Art">Nail Art</option>
+            </select>
+        </div>
 
-                <label for="heure">Heure souhaitée</label>
-                <input type="time" id="heure" required>
+        <div class="champ">
+            <label for="date">Date souhaitée</label>
+            <input type="date" id="date" required>
+        </div>
 
-                <label for="message">Message complémentaire</label>
-                <textarea id="message" placeholder="Votre message..."></textarea>
+        <div class="champ">
+            <label for="heure">Heure souhaitée</label>
+            <input type="time" id="heure" required>
+        </div>
 
-                <button type="button">Envoyer ma demande</button>
+        <div class="champ">
+            <label for="message">Message complémentaire</label>
+            <textarea id="message"
+                placeholder="Précisez vos envies..."></textarea>
+        </div>
 
-            </form>
+        <button type="button">Envoyer ma demande</button>
 
-            <!-- WHATSAPP -->
-            <a class="whatsapp" href="https://wa.me/32499079045" target="_blank" rel="noopener">
-                Nous contacter sur WhatsApp
-            </a>
+        <p class="reservation-note">
+            Votre demande sera envoyée sur WhatsApp.
+            Le rendez-vous sera confirmé après échange.
+        </p>
 
-        </section>
+    </form>
+
+    <a class="whatsapp"
+       href="https://wa.me/32499079045"
+       target="_blank" rel="noopener">
+        Nous contacter sur WhatsApp
+    </a>
+
+</section>
 
     </main>
 
     <!-- PIED DE PAGE -->
-    <footer>
+  
+<footer class="footer-luxe">
+
+    <div class="footer-contenu">
+
+        <div class="footer-marque">
+            <h2>GLOW NAILS AND BEAUTY</h2>
+            <p>BY AUDREY</p>
+            <span>La beauté jusque dans les moindres détails.</span>
+        </div>
+
+        <div class="footer-liens">
+            <h3>Navigation</h3>
+            <a href="index.html">Accueil</a>
+            <a href="index.html#prestations">Prestations</a>
+            <a href="index.html#galerie">Galerie</a>
+            <a href="tarifs.html">Tarifs</a>
+            <a href="index.html#contact">Contact</a>
+        </div>
+
+     
+<div class="footer-contact">
+    <h3>Restons en contact</h3>
+
+    <a href="https://wa.me/32499079045"
+       target="_blank" rel="noopener"
+       class="reseau-social">
+        <span class="icone-social">W</span>
+        WhatsApp
+    </a>
+
+    <a href="https://www.tiktok.com/@glow.nails.and.be"
+       target="_blank" rel="noopener"
+       class="reseau-social">
+        <span class="icone-social">♪</span>
+        TikTok
+    </a>
+
+    <span class="reseau-social instagram">
+        <span class="icone-social">◎</span>
+        Instagram — bientôt disponible
+    </span>
+
+    <p>Namur, Belgique</p>
+</div>
+
+
+    </div>
+
+    <div class="footer-bas">
         <p>&copy; 2026 Glow Nails and Beauty by Audrey. Tous droits réservés.</p>
-    </footer>
+    </div>
+
+</footer>
 
     <script src="script.js"></script>
-
+<div id="visionneuse" class="visionneuse">
+    <button id="fermer-image" aria-label="Fermer">&times;</button>
+    <img id="image-agrandie" src="" alt="Photo agrandie">
+</div>
 </body>
 </html>

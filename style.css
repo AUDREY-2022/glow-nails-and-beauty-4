@@ -175,3 +175,774 @@ section p {
 .reservation button:hover {
     background-color: #B87583;
 }
+
+/* GALERIE LUXE */
+
+.galerie-section {
+    padding: 70px 7%;
+    background: #fffafa;
+}
+
+.galerie-intro {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 45px;
+}
+
+.galerie-surtitre {
+    color: #c9a052;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.galerie-intro h2 {
+    color: #a85f72;
+    font-size: 35px;
+    margin: 12px 0;
+}
+
+.galerie-intro > p:last-child {
+    color: #777;
+    line-height: 1.7;
+}
+
+.galerie-luxe {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+    grid-template-rows: repeat(2, 250px);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.galerie-image {
+    position: relative;
+    overflow: hidden;
+    border-radius: 16px;
+    background: #f3e4e8;
+}
+
+.galerie-grande {
+    grid-row: span 2;
+}
+
+.galerie-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.galerie-image:hover img {
+    transform: scale(1.07);
+}
+
+.galerie-legende {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 18px 18px;
+    color: white;
+    background: linear-gradient(transparent, rgba(0,0,0,0.75));
+}
+
+.galerie-legende h3 {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.galerie-legende p {
+    font-size: 13px;
+    color: #f5dce3;
+}
+
+/* ADAPTATION AUX TELEPHONES */
+
+@media screen and (max-width: 600px) {
+    .galerie-section {
+        padding: 45px 18px;
+    }
+
+    .galerie-intro h2 {
+        font-size: 27px;
+    }
+
+    .galerie-luxe {
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 230px 230px;
+        gap: 15px;
+    }
+
+    .galerie-grande {
+        grid-row: auto;
+    }
+}
+
+/* GALERIE */
+.galerie-section {
+    padding: 70px 7%;
+    background: #fffafa;
+}
+
+.galerie-intro {
+    text-align: center;
+    margin: 0 auto 40px;
+}
+
+.galerie-surtitre {
+    color: #c9a052;
+    letter-spacing: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.galerie-intro h2 {
+    color: #a85f72;
+    font-size: 35px;
+    margin: 12px 0;
+}
+
+.galerie-luxe {
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    grid-auto-rows: 230px;
+    gap: 18px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.galerie-image {
+    overflow: hidden;
+    border-radius: 16px;
+    cursor: pointer;
+}
+
+.galerie-grande {
+    grid-row: span 2;
+}
+
+.galerie-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.4s;
+}
+
+.galerie-image:hover img {
+    transform: scale(1.07);
+}
+
+/* PHOTO AGRANDIE */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.lightbox img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+#fermerGalerie {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: white;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 600px) {
+    .galerie-section {
+        padding: 45px 18px;
+    }
+
+    .galerie-intro h2 {
+        font-size: 27px;
+    }
+
+    .galerie-luxe {
+        grid-template-columns: 1fr 1fr;
+        grid-auto-rows: 180px;
+        gap: 12px;
+    }
+
+    .galerie-grande {
+        grid-column: span 2;
+        grid-row: span 1;
+    }
+}
+/* AGRANDISSEMENT DES PHOTOS */
+.galerie-image img {
+    cursor: pointer;
+}
+
+.visionneuse {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.92);
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.visionneuse.active {
+    display: flex;
+}
+
+.visionneuse img {
+    max-width: 90%;
+    max-height: 85vh;
+    object-fit: contain;
+    border-radius: 12px;
+}
+
+#fermer-image {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    background: transparent;
+    border: none;
+    font-size: 45px;
+    cursor: pointer;
+}
+
+/* SECTION RESERVATION */
+.contact-section {
+    padding: 75px 20px;
+    background: #fffafa;
+}
+
+.contact-intro {
+    text-align: center;
+    max-width: 650px;
+    margin: 0 auto 35px;
+}
+
+.contact-intro h2 {
+    color: #a85f72;
+    font-size: 32px;
+    margin: 12px 0;
+}
+
+.contact-intro > p:last-child {
+    color: #777;
+    line-height: 1.7;
+}
+
+.reservation {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.07);
+}
+
+.champ {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.champ label {
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: 600;
+}
+
+.champ input,
+.champ select,
+.champ textarea {
+    padding: 14px;
+    border: 1px solid #e4cbd2;
+    border-radius: 8px;
+    font-size: 15px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.champ textarea {
+    min-height: 110px;
+    resize: vertical;
+}
+
+.reservation button {
+    width: 100%;
+    padding: 15px;
+    background: #a85f72;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.reservation button:hover {
+    background: #854657;
+}
+
+.reservation-note {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    margin-top: 18px;
+    line-height: 1.6;
+}
+
+.contact-section .whatsapp {
+    display: block;
+    width: fit-content;
+    margin: 25px auto 0;
+}
+
+@media screen and (max-width: 600px) {
+    .reservation {
+        padding: 22px 17px;
+    }
+
+    .contact-intro h2 {
+        font-size: 26px;
+    }
+}
+
+/* FOOTER LUXE */
+.footer-luxe {
+    background: #171315;
+    color: white;
+    padding: 55px 7% 20px;
+}
+
+.footer-contenu {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.footer-marque h2 {
+    color: #e2a6b5;
+    letter-spacing: 2px;
+    font-size: 22px;
+}
+
+.footer-marque > p {
+    color: #c9a052;
+    letter-spacing: 5px;
+    font-size: 12px;
+}
+
+.footer-marque span {
+    display: block;
+    margin-top: 20px;
+    color: #c9bfc2;
+    font-size: 14px;
+}
+
+.footer-luxe h3 {
+    color: #e2a6b5;
+    margin-bottom: 18px;
+}
+
+.footer-liens a,
+.footer-contact a {
+    display: block;
+    color: #ddd;
+    text-decoration: none;
+    margin-bottom: 12px;
+    font-size: 14px;
+}
+
+.footer-liens a:hover,
+.footer-contact a:hover {
+    color: #c9a052;
+}
+
+.footer-contact p {
+    color: #ddd;
+    font-size: 14px;
+}
+
+.footer-bas {
+    border-top: 1px solid #40363a;
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    color: #aaa;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 600px) {
+    .footer-contenu {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .footer-luxe {
+        padding: 40px 25px 20px;
+    }
+}
+
+/* RESEAUX SOCIAUX */
+.reseau-social {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    color: #ddd;
+    text-decoration: none;
+    margin-bottom: 15px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.reseau-social:hover {
+    color: #e2a6b5;
+}
+
+.icone-social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    border: 1px solid #c9a052;
+    border-radius: 50%;
+    color: #e2a6b5;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.instagram {
+    color: #aaa;
+    cursor: default;
+}
+
+/* =================================
+   NOUVELLE IDENTITE GLOW NAILS
+   ================================= */
+
+:root {
+    --rose: #F00085;
+    --violet: #7626C9;
+    --or: #D6AC55;
+    --noir: #171315;
+    --fond: #FFF7FB;
+}
+
+/* Couleurs générales */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: var(--fond);
+    color: var(--noir);
+}
+
+/* En-tête */
+header {
+    background: linear-gradient(120deg, var(--noir), #351044);
+    color: white;
+}
+
+header h1 {
+    color: var(--rose);
+}
+
+header p {
+    color: var(--or);
+}
+
+/* Navigation */
+nav {
+    background: linear-gradient(90deg, var(--rose), var(--violet));
+}
+
+nav a {
+    color: white;
+    transition: 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--or);
+}
+
+/* Titres */
+section h2,
+.galerie-intro h2,
+.contact-intro h2 {
+    color: var(--violet);
+}
+
+/* Cartes de prestations */
+.service {
+    background: white;
+    border: 1px solid var(--or);
+    box-shadow: 0 5px 18px rgba(118, 38, 201, 0.10);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.service:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 10px 25px rgba(240, 0, 133, 0.16);
+}
+
+.service h3 {
+    color: var(--rose);
+}
+
+/* Boutons */
+button,
+.reservation button {
+    background: linear-gradient(110deg, var(--rose), var(--violet));
+    color: white;
+    border: 1px solid var(--or);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover,
+.reservation button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 18px rgba(118, 38, 201, 0.25);
+}
+
+/* Galerie */
+.galerie-section,
+.contact-section {
+    background: linear-gradient(135deg, #FFF7FB, #F3E9FF);
+}
+
+.galerie-surtitre {
+    color: var(--rose);
+}
+
+.galerie-image {
+    border: 2px solid var(--or);
+    box-shadow: 0 5px 18px rgba(23, 19, 21, 0.10);
+}
+
+/* Formulaire */
+.reservation {
+    border-top: 4px solid var(--rose);
+}
+
+.champ input:focus,
+.champ select:focus,
+.champ textarea:focus {
+    outline: 2px solid var(--violet);
+    border-color: var(--rose);
+}
+
+/* Footer */
+.footer-luxe {
+    background: linear-gradient(135deg, #171315, #351044);
+}
+
+.footer-marque h2,
+.footer-luxe h3 {
+    color: var(--rose);
+}
+
+.footer-marque > p {
+    color: var(--or);
+}
+
+/* Mouvement fluide */
+section {
+    transition: box-shadow 0.5s ease;
+}
+
+.galerie-image img {
+    transition: transform 0.8s ease;
+}
+
+.galerie-image:hover img {
+    transform: scale(1.06);
+}
+
+/* Respect des préférences de mouvement */
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* APPARITION FLUIDE DES SECTIONS */
+
+.apparition {
+    opacity: 0;
+    transform: translateY(35px);
+    transition: opacity 0.9s ease, transform 0.9s ease;
+}
+
+.apparition.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* PETIT EFFET FLOTTANT SUR LES CARTES */
+
+.service {
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.service:hover {
+    transform: translateY(-8px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .apparition {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+}
+
+/* VAGUES FLUIDES GLOW NAILS */
+
+.galerie-section,
+.contact-section {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+}
+
+.galerie-section::before,
+.contact-section::before {
+    content: "";
+    position: absolute;
+    width: 350px;
+    height: 350px;
+    top: 10%;
+    left: -150px;
+    border-radius: 45%;
+    background: linear-gradient(
+        135deg,
+        rgba(240, 0, 133, 0.13),
+        rgba(118, 38, 201, 0.16)
+    );
+    filter: blur(45px);
+    animation: vague 9s ease-in-out infinite alternate;
+    z-index: -1;
+    pointer-events: none;
+}
+
+.galerie-section::after,
+.contact-section::after {
+    content: "";
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    right: -120px;
+    bottom: 0;
+    border-radius: 50%;
+    background: rgba(118, 38, 201, 0.12);
+    filter: blur(50px);
+    animation: vague 11s ease-in-out infinite alternate-reverse;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes vague {
+    0% {
+        transform: translate(0, 0) scale(1);
+        border-radius: 45% 55% 60% 40%;
+    }
+
+    50% {
+        transform: translate(40px, 25px) scale(1.15);
+        border-radius: 60% 40% 45% 55%;
+    }
+
+    100% {
+        transform: translate(-15px, 45px) scale(0.95);
+        border-radius: 40% 60% 55% 45%;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .galerie-section::before,
+    .galerie-section::after,
+    .contact-section::before,
+    .contact-section::after {
+        animation: none;
+    }
+}
+
+/* ACCUEIL : FOND LUMINEUX ANIME */
+
+header {
+    position: relative;
+    overflow: hidden;
+    isolation: isolate;
+    background:
+        radial-gradient(
+            circle at 15% 50%,
+            rgba(240, 0, 133, 0.30),
+            transparent 40%
+        ),
+        radial-gradient(
+            circle at 85% 40%,
+            rgba(118, 38, 201, 0.35),
+            transparent 45%
+        ),
+        linear-gradient(120deg, #171315, #351044, #171315);
+    background-size: 150% 150%;
+    animation: lumiereAccueil 10s ease-in-out infinite alternate;
+}
+
+header h1 {
+    position: relative;
+    animation: titreFlottant 4s ease-in-out infinite;
+}
+
+@keyframes lumiereAccueil {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes titreFlottant {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-5px);
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    header,
+    header h1 {
+        animation: none;
+    }
+}
