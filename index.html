@@ -1,0 +1,144 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow Nails and Beauty by Audrey</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- EN-TETE DU SITE -->
+    <header>
+        <h1>GLOW NAILS AND BEAUTY</h1>
+        <p>BY AUDREY</p>
+    </header>
+
+    <!-- MENU DE NAVIGATION -->
+    <nav>
+        <a href="#accueil">Accueil</a>
+        <a href="#prestations">Prestations</a>
+        <a href="#galerie">Galerie</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <main>
+
+        <!-- ACCUEIL -->
+        <section id="accueil">
+            <h2>Bienvenue dans mon univers beauté</h2>
+            <p>Votre beauté, notre passion.</p>
+            <p>Découvrez nos prestations d'onglerie et de beauté.</p>
+
+            <a class="bouton" href="#contact">Prendre rendez-vous</a>
+        </section>
+
+        <!-- PRESTATIONS -->
+        <section id="prestations">
+            <h2>Nos prestations</h2>
+
+            <div class="services">
+
+                <div class="service">
+                    <h3>Manucure</h3>
+                    <p>Soin et mise en beauté des mains et des ongles.</p>
+                </div>
+
+                <div class="service">
+                    <h3>Pose d'ongles</h3>
+                    <p>Pose de gel, capsules et extensions.</p>
+                </div>
+
+                <div class="service">
+                    <h3>Pédicure</h3>
+                    <p>Nettoyage, soin et mise en beauté des pieds.</p>
+                </div>
+
+                <div class="service">
+                    <h3>Nail Art</h3>
+                    <p>Décoration et personnalisation des ongles.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- GALERIE -->
+        <section id="galerie">
+            <h2>Notre galerie</h2>
+            <p>Découvrez nos inspirations et créations beauté.</p>
+
+            <div class="galerie">
+
+                <div class="photo">
+                    <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?w=500" alt="Ongles élégants">
+                </div>
+
+                <div class="photo">
+                    <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?w=500" alt="Manucure artistique">
+                </div>
+
+                <div class="photo">
+                    <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?w=500" alt="Beauté des ongles">
+                </div>
+
+            </div>
+        </section>
+
+        <!-- CONTACT ET RESERVATION -->
+        <section id="contact">
+            <h2>Prendre rendez-vous</h2>
+            <p>Réservez votre moment beauté chez Glow Nails and Beauty.</p>
+
+            <form class="reservation">
+
+                <label for="nom">Votre nom</label>
+                <input type="text" id="nom" placeholder="Votre nom complet" required>
+
+                <label for="telephone">Votre téléphone</label>
+                <input type="tel" id="telephone" placeholder="Votre numéro" required>
+
+                <label for="prestation">Prestation souhaitée</label>
+                <select id="prestation" required>
+                    <option value="">Choisissez une prestation</option>
+                    <option>Manucure</option>
+                    <option>Pose d'ongles</option>
+                    <option>Pédicure</option>
+                    <option>Nail Art</option>
+                </select>
+
+                <label for="date">Date souhaitée</label>
+                <input type="date" id="date" required>
+
+                <label for="heure">Heure souhaitée</label>
+                <input type="time" id="heure" required>
+
+                <label for="message">Message complémentaire</label>
+                <textarea id="message" placeholder="Votre message..."></textarea>
+
+                <button type="button">Envoyer ma demande</button>
+
+            </form>
+
+            <!-- WHATSAPP -->
+            <a class="whatsapp" href="https://wa.me/32499079045" target="_blank" rel="noopener">
+                Nous contacter sur WhatsApp
+            </a>
+
+        </section>
+
+    </main>
+
+    <!-- PIED DE PAGE -->
+    <footer>
+        <p>&copy; 2026 Glow Nails and Beauty by Audrey. Tous droits réservés.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
