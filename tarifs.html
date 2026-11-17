@@ -11,245 +11,44 @@
     <meta name="description" content="Découvrez les tarifs de Glow Nails and Beauty : manucure, pose d'ongles, pédicure et Nail Art.">
 
     <link rel="stylesheet" href="style.css">
-
-   
-<style>
-/* ===================================
-   PAGE TARIFS - GLOW NAILS AND BEAUTY
-=================================== */
-
-.tarifs-hero {
-    position: relative;
-    overflow: hidden;
-    text-align: center;
-    padding: 85px 20px;
-    background:
-        radial-gradient(circle at 15% 20%, rgba(240,0,133,.22), transparent 35%),
-        radial-gradient(circle at 85% 80%, rgba(118,38,201,.25), transparent 35%),
-        var(--noir);
-    border-bottom: 3px solid var(--or);
-}
-
-.tarifs-hero h2 {
-    color: white;
-    font-family: Georgia, serif;
-    font-size: clamp(38px, 5vw, 55px);
-    margin-bottom: 18px;
-}
-
-.tarifs-hero p {
-    color: #f4dce9;
-    font-size: 16px;
-    line-height: 1.8;
-}
-
-.tarifs-container {
-    max-width: 1050px;
-    margin: 55px auto;
-    padding: 0 22px;
-}
-
-.categorie-tarif {
-    margin-bottom: 55px;
-    padding: 30px;
-    background: white;
-    border: 1px solid rgba(214,172,85,.55);
-    border-radius: 20px;
-    box-shadow: 0 12px 35px rgba(23,19,21,.07);
-}
-
-.categorie-tarif h2 {
-    color: var(--violet);
-    font-family: Georgia, serif;
-    font-size: 29px;
-    padding-bottom: 15px;
-    margin-bottom: 25px;
-    border-bottom: 2px solid var(--or);
-}
-
-.tarif-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-    padding: 20px 15px;
-    margin-bottom: 12px;
-    border-radius: 12px;
-    border-bottom: 1px solid #f0e5ec;
-    transition: .3s ease;
-}
-
-.tarif-item:hover {
-    background: #fff4fa;
-    transform: translateX(5px);
-}
-
-.tarif-item h3 {
-    color: var(--noir);
-    font-size: 17px;
-    margin-bottom: 7px;
-}
-
-.tarif-item p {
-    color: #766c74;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.prix {
-    color: var(--rose);
-    font-size: 21px;
-    font-weight: bold;
-    white-space: nowrap;
-}
-
-.tarif-note {
-    text-align: center;
-    padding: 30px;
-    border: 1px solid var(--or);
-    border-radius: 18px;
-    background: linear-gradient(135deg, #fff4fa, #f4edfb);
-    margin: 50px 0;
-}
-
-.tarif-note p {
-    color: #625761;
-    line-height: 1.9;
-}
-
-.reservation-tarifs {
-    text-align: center;
-    padding: 55px 20px;
-    margin: 50px 0;
-    border-radius: 20px;
-    background: linear-gradient(120deg, var(--noir), #3c1b40);
-}
-
-.reservation-tarifs h2 {
-    color: white;
-    font-family: Georgia, serif;
-    font-size: clamp(25px, 4vw, 35px);
-    margin-bottom: 15px;
-}
-
-.reservation-tarifs p {
-    color: #f2dce9;
-    margin-bottom: 25px;
-}
-
-.reservation-tarifs a {
-    display: inline-block;
-    padding: 16px 30px;
-    color: white;
-    background: linear-gradient(120deg, var(--rose), var(--violet));
-    text-decoration: none;
-    border: 1px solid var(--or);
-    border-radius: 35px;
-    font-weight: bold;
-    transition: .3s;
-}
-
-.reservation-tarifs a:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 25px rgba(240,0,133,.3);
-}
-
-#retour-haut {
-    display: block;
-    margin: 30px auto;
-    padding: 13px 26px;
-    background: var(--noir);
-    color: white;
-    border: 1px solid var(--or);
-    border-radius: 25px;
-    cursor: pointer;
-}
-
-/* RESPONSIVE */
-
-@media (max-width: 600px) {
-    .tarifs-hero {
-        padding: 60px 15px;
-    }
-
-    .tarifs-container {
-        padding: 0 12px;
-    }
-
-    .categorie-tarif {
-        padding: 20px 13px;
-    }
-
-    .categorie-tarif h2 {
-        font-size: 24px;
-    }
-
-    .tarif-item {
-        padding: 15px 5px;
-        gap: 10px;
-    }
-
-    .tarif-item h3 {
-        font-size: 15px;
-    }
-
-    .tarif-item p {
-        font-size: 12px;
-    }
-
-    .prix {
-        font-size: 17px;
-    }
-}
-</style>
-
 </head>
-
-
-<style>
-    #retour-haut {
-        display: block;
-        margin: 30px auto;
-        padding: 12px 25px;
-        background: #a85f72;
-        color: white;
-        border: none;
-        border-radius: 25px;
-        cursor: pointer;
-        font-size: 15px;
-    }
-
-    #retour-haut:hover {
-        background: #222;
-    }
-</style>
 
 <body>
 
+    <!-- EN-TETE -->
     <header>
         <h1>GLOW NAILS AND BEAUTY</h1>
         <p>BY AUDREY</p>
     </header>
 
-   <nav>
-    <a href="index.html">Accueil</a>
-    <a href="index.html#prestations">Prestations</a>
-    <a href="index.html#galerie">Galerie</a>
-    <a href="tarifs.html">Tarifs</a>
-    <a href="apropos.html">À propos</a>
-    <a href="index.html#contact">Contact</a>
-</nav>
+    <!-- MENU DE NAVIGATION -->
+    <nav>
+        <a href="index.html">Accueil</a>
+        <a href="index.html#prestations">Prestations</a>
+        <a href="index.html#galerie">Galerie</a>
+        <a href="tarifs.html">Tarifs</a>
+        <a href="apropos.html">À propos</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
     <main>
 
+        <!-- PRESENTATION DES TARIFS -->
         <section class="tarifs-hero">
+
             <h2>Nos tarifs</h2>
+
             <p>La beauté jusque dans les moindres détails.</p>
+
             <p>Offrez-vous un moment rien que pour vous.</p>
+
         </section>
 
         <div class="tarifs-container">
 
+            <!-- MANUCURE -->
             <section class="categorie-tarif">
+
                 <h2>Manucure</h2>
 
                 <div class="tarif-item">
@@ -275,9 +74,13 @@
                     </div>
                     <span class="prix">15 €</span>
                 </div>
+
             </section>
 
+
+            <!-- POSE D'ONGLES -->
             <section class="categorie-tarif">
+
                 <h2>Pose d'ongles</h2>
 
                 <div class="tarif-item">
@@ -311,9 +114,13 @@
                     </div>
                     <span class="prix">15 €</span>
                 </div>
+
             </section>
 
+
+            <!-- PEDICURE -->
             <section class="categorie-tarif">
+
                 <h2>Pédicure</h2>
 
                 <div class="tarif-item">
@@ -339,9 +146,13 @@
                     </div>
                     <span class="prix">30 €</span>
                 </div>
+
             </section>
 
+
+            <!-- NAIL ART -->
             <section class="categorie-tarif">
+
                 <h2>Nail Art</h2>
 
                 <div class="tarif-item">
@@ -359,35 +170,117 @@
                     </div>
                     <span class="prix">À partir de 10 €</span>
                 </div>
+
             </section>
 
+
+            <!-- INFORMATIONS -->
             <div class="tarif-note">
+
                 <p>
                     Les tarifs sont indicatifs et peuvent varier selon
                     la longueur des ongles, la technique et la décoration choisie.
                 </p>
+
                 <p>
                     Chaque prestation est réalisée avec soin afin de vous
                     offrir une expérience beauté agréable.
                 </p>
+
             </div>
 
+
+            <!-- RESERVATION -->
             <section class="reservation-tarifs">
+
                 <h2>Envie de prendre soin de vous ?</h2>
+
                 <p>Contactez-nous pour demander votre rendez-vous.</p>
 
-                <a href="https://wa.me/32499079045" target="_blank" rel="noopener">
+                <a href="https://wa.me/32499079045"
+                   target="_blank"
+                   rel="noopener">
                     Réserver sur WhatsApp
                 </a>
+
             </section>
 
         </div>
 
     </main>
 
-    <footer>
-        <p>&copy; 2026 Glow Nails and Beauty by Audrey. Tous droits réservés.</p>
-    </footer>
 
+    <!-- PIED DE PAGE -->
+    <footer class="footer-luxe">
+
+        <div class="footer-contenu">
+
+            <div class="footer-marque">
+                <h2>GLOW NAILS AND BEAUTY</h2>
+                <p>BY AUDREY</p>
+                <span>La beauté jusque dans les moindres détails.</span>
+            </div>
+
+            <div class="footer-liens">
+
+                <h3>Navigation</h3>
+
+                <a href="index.html">Accueil</a>
+                <a href="index.html#prestations">Prestations</a>
+                <a href="index.html#galerie">Galerie</a>
+                <a href="tarifs.html">Tarifs</a>
+                <a href="apropos.html">À propos</a>
+                <a href="index.html#contact">Contact</a>
+
+            </div>
+
+            <div class="footer-contact">
+
+                <h3>Restons en contact</h3>
+
+                <a href="https://wa.me/32499079045"
+                   target="_blank"
+                   rel="noopener"
+                   class="reseau-social">
+
+                    <span class="icone-social">W</span>
+                    WhatsApp
+
+                </a>
+
+                <a href="https://www.tiktok.com/@glow.nails.and.be"
+                   target="_blank"
+                   rel="noopener"
+                   class="reseau-social">
+
+                    <span class="icone-social">♪</span>
+                    TikTok
+
+                </a>
+
+                <p>Namur, Belgique</p>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bas">
+
+            <p>
+                &copy; 2026 Glow Nails and Beauty by Audrey.
+                Tous droits réservés.
+            </p>
+
+        </div>
+
+    </footer>
+<!-- GROSSES GOUTTES D'EAU -->
+<div class="gouttes-eau">
+    <span class="goutte"></span>
+    <span class="goutte"></span>
+    <span class="goutte"></span>
+    <span class="goutte"></span>
+    <span class="goutte"></span>
+</div>
 </body>
 </html>

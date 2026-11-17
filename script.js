@@ -119,3 +119,86 @@ if ("IntersectionObserver" in window) {
     });
 
 }
+
+/* ==========================================
+
+/* ==========================================
+
+/* ==========================================
+   4. TITRE : ECRITURE LETTRE PAR LETTRE
+========================================== */
+
+const accueil = document.querySelector("#accueil");
+
+if (accueil) {
+    const titre = accueil.querySelector("h2");
+
+    if (titre) {
+        const lignes = [
+            "Révélez votre beauté,",
+            "une touche d'élégance à la fois."
+        ];
+
+        titre.textContent = "";
+        titre.setAttribute(
+            "aria-label",
+            "Révélez votre beauté, une touche d'élégance à la fois."
+        );
+
+        let delai = 0.4;
+
+        lignes.forEach(function(texte, index) {
+            const ligne = document.createElement("span");
+            ligne.className = "titre-ligne-accueil";
+            ligne.classList.add(
+                index === 0 ? "titre-premiere-ligne" : "titre-deuxieme-ligne"
+            );
+
+            ligne.setAttribute("aria-hidden", "true");
+
+            texte.split(" ").forEach(function(mot, numeroMot) {
+                if (numeroMot > 0) {
+                    ligne.appendChild(document.createTextNode(" "));
+                }
+
+                const motComplet = document.createElement("span");
+                motComplet.className = "mot-accueil";
+
+                Array.from(mot).forEach(function(caractere) {
+                    const lettre = document.createElement("span");
+                    lettre.className = "lettre-accueil";
+                    lettre.textContent = caractere;
+                    lettre.style.animationDelay = delai + "s";
+
+                    motComplet.appendChild(lettre);
+                    delai += 0.055;
+                });
+
+                ligne.appendChild(motComplet);
+            });
+
+            titre.appendChild(ligne);
+            delai += 0.5;
+        });
+    }
+
+    const description = accueil.querySelector(".accueil-description");
+    const actions = accueil.querySelector(".accueil-actions");
+    const signature = accueil.querySelector(".accueil-signature");
+    const decoration = accueil.querySelector(".accueil-decoration");
+
+    [
+        [description, 4.5],
+        [actions, 5.2],
+        [signature, 5.8],
+        [decoration, 1.2]
+    ].forEach(function(elementEtDelai) {
+        const element = elementEtDelai[0];
+
+        if (element) {
+            element.classList.add("accueil-entree-progressive");
+            element.style.animationDelay = elementEtDelai[1] + "s";
+        }
+    });
+}
+
