@@ -11,6 +11,260 @@
     <meta name="description" content="Découvrez les tarifs de Glow Nails and Beauty : manucure, pose d'ongles, pédicure et Nail Art.">
 
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* ==========================================
+           PAGE TARIFS - DESIGN PREMIUM
+           FUCHSIA - VIOLET - NOIR - OR
+        ========================================== */
+
+        .tarifs-hero {
+            position: relative;
+            padding: 75px 20px 65px;
+            overflow: hidden;
+            background:
+                radial-gradient(circle at 15% 30%, rgba(240, 0, 133, .15), transparent 35%),
+                radial-gradient(circle at 85% 70%, rgba(118, 38, 201, .15), transparent 35%),
+                linear-gradient(135deg, #fff7fb, #f3e3f2);
+            border-bottom: 2px solid var(--or);
+        }
+
+        .tarifs-hero h2 {
+            color: var(--violet);
+            font-size: clamp(32px, 5vw, 48px);
+            margin: 0 0 15px;
+            letter-spacing: 2px;
+            font-family: Georgia, serif;
+        }
+
+        .tarifs-hero p {
+            color: var(--texte);
+            font-size: 16px;
+            line-height: 1.7;
+            margin: 7px 0;
+        }
+
+        .tarifs-hero::after {
+            content: "";
+            display: block;
+            width: 75px;
+            height: 3px;
+            margin: 25px auto 0;
+            background: linear-gradient(90deg, var(--rose), var(--or), var(--violet));
+            border-radius: 10px;
+        }
+
+        .tarifs-container {
+            width: min(100% - 40px, 1050px);
+            margin: 55px auto;
+            padding: 0;
+        }
+
+        .categorie-tarif {
+            margin-bottom: 45px;
+            padding: 30px;
+            text-align: left;
+            background: rgba(255, 255, 255, .88);
+            border: 1px solid rgba(214, 172, 85, .45);
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(23, 19, 21, .07);
+            transition: transform .35s ease, box-shadow .35s ease;
+        }
+
+        .categorie-tarif:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 15px 35px rgba(118, 38, 201, .12);
+        }
+
+        .categorie-tarif h2 {
+            color: var(--violet);
+            font-family: Georgia, serif;
+            font-size: 27px;
+            letter-spacing: 1px;
+            padding-bottom: 15px;
+            margin: 0 0 22px;
+            border-bottom: 2px solid var(--or);
+        }
+
+        .tarif-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            padding: 18px 15px;
+            margin-bottom: 12px;
+            background: #fff9fc;
+            border: 1px solid rgba(118, 38, 201, .09);
+            border-left: 4px solid var(--rose);
+            border-radius: 12px;
+            transition: background .3s ease, transform .3s ease;
+        }
+
+        .tarif-item:hover {
+            background: #f8eaf5;
+            transform: translateX(4px);
+        }
+
+        .tarif-item h3 {
+            color: var(--noir);
+            font-size: 17px;
+            margin: 0 0 7px;
+        }
+
+        .tarif-item p {
+            color: var(--texte);
+            font-size: 14px;
+            line-height: 1.5;
+            margin: 0;
+        }
+
+        .prix {
+            color: var(--violet);
+            font-size: 21px;
+            font-weight: bold;
+            white-space: nowrap;
+        }
+
+        .tarif-note {
+            text-align: center;
+            background: linear-gradient(135deg, #f9e9f3, #eee3f8);
+            padding: 28px;
+            border: 1px solid rgba(214, 172, 85, .6);
+            border-radius: 18px;
+            margin: 45px 0;
+        }
+
+        .tarif-note p {
+            color: var(--texte);
+            line-height: 1.8;
+            margin: 8px 0;
+        }
+
+        .reservation-tarifs {
+            text-align: center;
+            padding: 45px 20px;
+            margin: 50px 0;
+            background:
+                radial-gradient(circle at top left, rgba(240, 0, 133, .15), transparent 45%),
+                linear-gradient(135deg, #211626, #351044);
+            border: 1px solid var(--or);
+            border-radius: 22px;
+            box-shadow: 0 12px 30px rgba(23, 19, 21, .15);
+        }
+
+        .reservation-tarifs h2 {
+            color: white;
+            font-family: Georgia, serif;
+            font-size: 28px;
+            margin: 0 0 15px;
+        }
+
+        .reservation-tarifs p {
+            color: #f5dce9;
+            margin-bottom: 25px;
+            line-height: 1.6;
+        }
+
+        .reservation-tarifs a {
+            display: inline-block;
+            padding: 15px 30px;
+            color: white;
+            background: linear-gradient(120deg, var(--rose), var(--violet));
+            border: 1px solid var(--or);
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            letter-spacing: .5px;
+            box-shadow: 0 6px 18px rgba(240, 0, 133, .25);
+            transition: transform .3s ease, box-shadow .3s ease;
+        }
+
+        .reservation-tarifs a:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 10px 25px rgba(240, 0, 133, .4);
+        }
+
+        /* ADAPTATION AUX TELEPHONES */
+
+        @media (max-width: 600px) {
+
+            .tarifs-hero {
+                padding: 50px 15px;
+            }
+
+            .tarifs-hero h2 {
+                font-size: 32px;
+            }
+
+            .tarifs-hero p {
+                font-size: 14px;
+            }
+
+            .tarifs-container {
+                width: calc(100% - 24px);
+                margin: 30px auto;
+            }
+
+            .categorie-tarif {
+                padding: 20px 14px;
+                margin-bottom: 25px;
+                border-radius: 15px;
+            }
+
+            .categorie-tarif h2 {
+                font-size: 23px;
+            }
+
+            .tarif-item {
+                align-items: flex-start;
+                gap: 10px;
+                padding: 14px 10px;
+            }
+
+            .tarif-item h3 {
+                font-size: 14px;
+            }
+
+            .tarif-item p {
+                font-size: 12px;
+            }
+
+            .prix {
+                font-size: 16px;
+            }
+
+            .tarif-note {
+                padding: 20px 14px;
+            }
+
+            .reservation-tarifs {
+                padding: 35px 15px;
+            }
+
+            .reservation-tarifs h2 {
+                font-size: 23px;
+            }
+
+            .reservation-tarifs a {
+                padding: 13px 20px;
+                font-size: 14px;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .categorie-tarif,
+            .tarif-item,
+            .reservation-tarifs a {
+                transition: none;
+            }
+
+            .categorie-tarif:hover,
+            .tarif-item:hover,
+            .reservation-tarifs a:hover {
+                transform: none;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -35,20 +289,15 @@
 
         <!-- PRESENTATION DES TARIFS -->
         <section class="tarifs-hero">
-
             <h2>Nos tarifs</h2>
-
             <p>La beauté jusque dans les moindres détails.</p>
-
             <p>Offrez-vous un moment rien que pour vous.</p>
-
         </section>
 
         <div class="tarifs-container">
 
             <!-- MANUCURE -->
             <section class="categorie-tarif">
-
                 <h2>Manucure</h2>
 
                 <div class="tarif-item">
@@ -74,13 +323,10 @@
                     </div>
                     <span class="prix">15 €</span>
                 </div>
-
             </section>
-
 
             <!-- POSE D'ONGLES -->
             <section class="categorie-tarif">
-
                 <h2>Pose d'ongles</h2>
 
                 <div class="tarif-item">
@@ -114,13 +360,10 @@
                     </div>
                     <span class="prix">15 €</span>
                 </div>
-
             </section>
-
 
             <!-- PEDICURE -->
             <section class="categorie-tarif">
-
                 <h2>Pédicure</h2>
 
                 <div class="tarif-item">
@@ -146,13 +389,10 @@
                     </div>
                     <span class="prix">30 €</span>
                 </div>
-
             </section>
-
 
             <!-- NAIL ART -->
             <section class="categorie-tarif">
-
                 <h2>Nail Art</h2>
 
                 <div class="tarif-item">
@@ -170,13 +410,10 @@
                     </div>
                     <span class="prix">À partir de 10 €</span>
                 </div>
-
             </section>
-
 
             <!-- INFORMATIONS -->
             <div class="tarif-note">
-
                 <p>
                     Les tarifs sont indicatifs et peuvent varier selon
                     la longueur des ongles, la technique et la décoration choisie.
@@ -186,15 +423,11 @@
                     Chaque prestation est réalisée avec soin afin de vous
                     offrir une expérience beauté agréable.
                 </p>
-
             </div>
-
 
             <!-- RESERVATION -->
             <section class="reservation-tarifs">
-
                 <h2>Envie de prendre soin de vous ?</h2>
-
                 <p>Contactez-nous pour demander votre rendez-vous.</p>
 
                 <a href="https://wa.me/32499079045"
@@ -202,13 +435,10 @@
                    rel="noopener">
                     Réserver sur WhatsApp
                 </a>
-
             </section>
 
         </div>
-
     </main>
-
 
     <!-- PIED DE PAGE -->
     <footer class="footer-luxe">
@@ -222,7 +452,6 @@
             </div>
 
             <div class="footer-liens">
-
                 <h3>Navigation</h3>
 
                 <a href="index.html">Accueil</a>
@@ -231,56 +460,49 @@
                 <a href="tarifs.html">Tarifs</a>
                 <a href="apropos.html">À propos</a>
                 <a href="index.html#contact">Contact</a>
-
             </div>
 
             <div class="footer-contact">
-
                 <h3>Restons en contact</h3>
 
                 <a href="https://wa.me/32499079045"
                    target="_blank"
                    rel="noopener"
                    class="reseau-social">
-
                     <span class="icone-social">W</span>
                     WhatsApp
-
                 </a>
 
                 <a href="https://www.tiktok.com/@glow.nails.and.be"
                    target="_blank"
                    rel="noopener"
                    class="reseau-social">
-
                     <span class="icone-social">♪</span>
                     TikTok
-
                 </a>
 
                 <p>Namur, Belgique</p>
-
             </div>
 
         </div>
 
         <div class="footer-bas">
-
             <p>
                 &copy; 2026 Glow Nails and Beauty by Audrey.
                 Tous droits réservés.
             </p>
-
         </div>
 
     </footer>
-<!-- GROSSES GOUTTES D'EAU -->
-<div class="gouttes-eau">
-    <span class="goutte"></span>
-    <span class="goutte"></span>
-    <span class="goutte"></span>
-    <span class="goutte"></span>
-    <span class="goutte"></span>
-</div>
+
+    <!-- GROSSES GOUTTES D'EAU -->
+    <div class="gouttes-eau">
+        <span class="goutte"></span>
+        <span class="goutte"></span>
+        <span class="goutte"></span>
+        <span class="goutte"></span>
+        <span class="goutte"></span>
+    </div>
+
 </body>
 </html>
